@@ -52,8 +52,7 @@ app.get('/', (req, res) => {
 
 // Start server
 const port = process.env.PORT || 3001;
-const host = process.env.HOST_NAME || '0.0.0.0';
 
-app.listen(port, host, () => {
-        console.log(`Server is running on ${host}:${port}`);
+app.listen(port, '0.0.0.0', () => {
+        console.log(`Server is running on 0.0.0.0:${port}`);
 });
